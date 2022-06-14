@@ -17,6 +17,6 @@
         - name: Build image
           run: docker build -t postgres-app .
         - name: Docker-compose build
-          run: docker-compos build
+          run: docker-compose build
         - name: Docker-compose up
           run: docker-compose up
