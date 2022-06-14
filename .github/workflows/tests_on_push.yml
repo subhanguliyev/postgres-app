@@ -14,5 +14,9 @@
             architecture: 'x64'
         - name: Install requirements
           run: pip install -r requirements.txt
-        - name: Tests
+        - name: Build image
+          run: docker build -t postgres-app
+        - name: Docker-compose build
+          run: docker-compos build
+        - name: Docker-compose up
           run: docker-compose up
